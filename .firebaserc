@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "login-authentication-da99f": {
+      "hosting": {
+        "BookStore": [
+          "login-authentication-da99f"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "login-authentication-da99f"
+  }
+}

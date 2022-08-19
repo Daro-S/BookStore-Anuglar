@@ -1,0 +1,99 @@
+<div class="form-body">
+  <div class="row">
+      <div class="form-holder">
+          <div class="form-content">
+              <div class="form-items">
+                  <h3>Edit Your Book Now !</h3>
+                  <p>Fill in the data below.</p>
+                  <form class="requires-validation" novalidate (submit)="updateProduct(updateProductForm)" #updateProductForm="ngForm" >
+                      <div class="col-md-12">
+                        <!-- <label for="validationServer01"></label> -->
+                         <input class="form-control" type="text" required name="product_name" placeholder="Book Title"  [(ngModel)]="productDetails.name" ngModel>
+                         <div class="valid-feedback">Product name field is valid!</div>
+                         <div class="invalid-feedback">Product name cannot be blank!</div>
+                      </div>
+                      <div class="col-md-12">
+                          <input class="form-control" type="text" required name="product_isbn" placeholder="ISBN" [(ngModel)]="productDetails.isbn" ngModel >
+                           <div class="valid-feedback">ISBN field is valid!</div>
+                           <div class="invalid-feedback">ISBN field cannot be blank!</div>
+                      </div>
+                      <div class="col-md-12">
+                        <input class="form-control" type="text" required name="product_image" placeholder="Product Image" [(ngModel)]="productDetails.productImg" ngModel >
+                         <div class="valid-feedback">Product Image field is valid!</div>
+                         <div class="invalid-feedback">Product Image field cannot be blank!</div>
+                    </div>
+                    <div class="col-md-12">
+                      <input class="form-control" type="text" required name="product_price" placeholder="Price" [(ngModel)]="productDetails.price" ngModel >
+                       <div class="valid-feedback">Product price field is valid!</div>
+                       <div class="invalid-feedback">Product price field cannot be blank!</div>
+                  </div>
+                  <div class="col-md-12">
+                    <input class="form-control" type="text" required name="product_description" placeholder="Description" [(ngModel)]="productDetails.description" ngModel >
+                     <div class="valid-feedback">Product Description field is valid!</div>
+                     <div class="invalid-feedback">Product Description field cannot be blank!</div>
+                </div>
+                  <div class="col-md-12">
+                    <select class="form-select mt-3" required name="product_category" [(ngModel)]="productDetails.category" ngModel>
+                          <option selected disabled value="">Category</option>
+                          <option value="Fantasy">Fantasy</option>
+                          <option value="Sci-Fi">Sci-Fi</option>
+                          <option value="Mystery">Mystery</option>
+                          <option value="Romance">Romance</option>
+                          <option value="Thriller">Thriller</option>
+                          <option value="Horror">Horror</option>
+                   </select>
+                    <div class="valid-feedback">You selected a position!</div>
+                    <div class="invalid-feedback">Please select a position!</div>
+               </div>
+
+
+                     <!-- <div class="col-md-12">
+                          <select class="form-select mt-3" required>
+                                <option selected disabled value="">Position</option>
+                                <option value="jweb">Junior Web Developer</option>
+                                <option value="sweb">Senior Web Developer</option>
+                                <option value="pmanager">Project Manager</option>
+                         </select>
+                          <div class="valid-feedback">You selected a position!</div>
+                          <div class="invalid-feedback">Please select a position!</div>
+                     </div>
+
+
+                     <div class="col-md-12">
+                        <input class="form-control" type="password" name="password" placeholder="Password" required>
+                         <div class="valid-feedback">Password field is valid!</div>
+                         <div class="invalid-feedback">Password field cannot be blank!</div>
+                     </div> -->
+
+
+                     <!-- <div class="col-md-12 mt-3">
+                      <label class="mb-3 mr-1" for="gender">Gender: </label>
+
+                      <input type="radio" class="btn-check" name="gender" id="male" autocomplete="off" required>
+                      <label class="btn btn-sm btn-outline-secondary" for="male">Male</label>
+
+                      <input type="radio" class="btn-check" name="gender" id="female" autocomplete="off" required>
+                      <label class="btn btn-sm btn-outline-secondary" for="female">Female</label>
+
+                      <input type="radio" class="btn-check" name="gender" id="secret" autocomplete="off" required>
+                      <label class="btn btn-sm btn-outline-secondary" for="secret">Secret</label>
+                         <div class="valid-feedback mv-up">You selected a gender!</div>
+                          <div class="invalid-feedback mv-up">Please select a gender!</div>
+                      </div> -->
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label">I confirm that all data are correct</label>
+                   <div class="invalid-feedback">Please confirm that the entered data are all correct!</div>
+                  </div>
+
+
+                      <div class="form-button mt-3">
+                          <button id="submit" type="submit" class="btn btn-primary">Update Now</button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,118 @@
+{
+  "product": [
+    {
+      "id": 4,
+      "name": "Brist",
+      "isbn": "978-4-7741-8411-1",
+      "category_id": 5,
+      "description": "Most popular book in history",
+      "price": 300,
+      "is_available": true,
+      "productImg": "https://books.google.com.kh/books/publisher/content?id=bWHrDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE71KkhIwLuHaKFHfA-SUxtjuaP0wtS1FDrsJFgkJNTNfCNsAAxyFKvO3zPf_-celvYIO4JJdI1NdBGbS_7NJr78WltUUXCQBZsNQCcwptfKgfE59Xf9BGkxDa54yRRMCVtYzVc7F",
+      "rating": 4,
+      "review": 150,
+      "vendor_name": "abc shop",
+      "warranty": 1
+    },
+    {
+      "id": 5,
+      "name": "ULYSSES",
+      "isbn": "978-4-7741-8411-1",
+      "category_id": 5,
+      "description": "Most popular book in history",
+      "price": 300,
+      "is_available": true,
+      "productImg": "https://books.google.com.kh/books/publisher/content?id=lEAyEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE70l0qZm96Pdlh-C1rk2FLYuMUWauLF49xYj8GmpW6HrxwL1JoWATjfZLfryx_jT4f4y-ZoYTtPWzYs6WdZ0-A7pE_ZUw-9vW9PNozmGPXfdMf1q7nhCCovqogvD2VuPl4lgEvNU",
+      "rating": 4,
+      "review": 150,
+      "vendor_name": "abc shop",
+      "warranty": 1
+    },
+    {
+      "id": 6,
+      "name": "Beloved",
+      "isbn": "978-4-7741-8411-1",
+      "category_id": 5,
+      "description": "Most popular book in history",
+      "price": 300,
+      "is_available": true,
+      "productImg": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTK1H3KTFiCBn8RoGMOikUcT71l7SSa7jblH-Ei4ObhGORmhwaA",
+      "rating": 4,
+      "review": 150,
+      "vendor_name": "abc shop",
+      "warranty": 1
+    },
+    {
+      "id": 7,
+      "isbn": "978-4-7741-8411-1",
+      "name": "New World",
+      "category_id": 5,
+      "description": "Most popular book in history",
+      "price": 300,
+      "is_available": true,
+      "productImg": "https://books.google.com.kh/books/publisher/content?id=O8_WDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE70Jy6dMVyEsBi4oHQAlKkVpEDTLZf_dqCtWPbjNRg3j-6ZEZPFmaTsibn42ckBXW5LvkUQnmfTeWkjR9ZOq5Ly7AjU8dCT5GxdaaHg0rsZy-ZyC-zRBaBE3Wrd9MThlbAKAaEzZ",
+      "rating": 4,
+      "review": 150,
+      "vendor_name": "abc shop",
+      "warranty": 1,
+      "category": "Sci-Fic"
+    },
+    {
+      "name": "Pass",
+      "isbn": "978-4-7741-8411-1",
+      "productImg": "",
+      "price": "",
+      "category": "",
+      "id": 8
+    },
+    {
+      "name": "bro",
+      "isbn": "",
+      "productImg": "",
+      "price": "",
+      "category": "",
+      "id": 113
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "Post 2"
+    },
+    {
+      "id": 2,
+      "title": "Post 2"
+    },
+    {
+      "id": 3,
+      "title": "Post 3"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "categoryName": "Detective",
+      "postId": 1
+    },
+    {
+      "id": 2,
+      "categoryName": "Novel",
+      "PostID": 2
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "id": 2,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

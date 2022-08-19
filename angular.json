@@ -23,9 +23,13 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -90,12 +94,25 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/app/products/add-product/style.css"
             ],
             "scripts": []
+          }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "BookStore:build:production",
+            "firebaseProject": "login-authentication-da99f",
+            "firebaseHostingSite": "login-authentication-da99f"
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "7759e2e4-850a-48e8-80b1-52e80835b829"
   }
 }
