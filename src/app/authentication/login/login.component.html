@@ -1,0 +1,48 @@
+<script src="https://kit.fontawesome.com/d9e3c9507c.js" crossorigin="anonymous"></script>
+<section class="vh-100">
+  <div class="container py-5 h-100">
+    <div class="row d-flex align-items-center justify-content-center h-100">
+      <div class="col-md-8 col-lg-7 col-xl-6">
+        <img src="https://i.postimg.cc/GtBRcJwX/Screenshot-from-2022-08-20-15-18-06-1-1.png"
+          class="img-fluid" alt="Phone image">
+      </div>
+      <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+        <h1>Login</h1>
+        <form>
+          <!-- Email input -->
+          <div class="form-outline mb-4">
+            <input type="email" id="form1Example13" class="form-control form-control-lg" name="Email" [(ngModel)]="email" placeholder="Email address"/>
+          </div>
+
+          <!-- Password input -->
+          <div class="form-outline mb-4">
+            <input type="password" id="form1Example23" class="form-control form-control-lg" name="Password" [(ngModel)]="password" placeholder="Password"/>
+          </div>
+
+          <div class="d-flex justify-content-around align-items-center mb-4">
+            <!-- Checkbox -->
+            <a href="/forgot-password">Forgot password?</a>
+            <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="/register"
+              class="link-danger">Register</a></p>
+          </div>
+
+          <!-- Submit button -->
+          <button type="button" class="btn btn-primary btn-lg btn-block" (click)="login()">Sign in</button>
+
+          <div class="divider d-flex align-items-center my-4">
+            <p class="text-center fw-bold mx-3 mb-0 text-muted">OR</p>
+          </div>
+
+          <a class="btn btn-primary btn-lg btn-block" style="background-color: #3b5998"
+            role="button"   (click)="signInWithGoogle()">
+            <i class="fa fa-google-plus-square" aria-hidden="true"></i> Continue with Google
+          </a>
+          <a class="btn btn-primary btn-lg btn-block" style="background-color: #55acee" href="#!"
+            role="button">
+            <i class="fa fa-facebook-official" aria-hidden="true"></i> Continue with Twitter</a>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "bookstore-4c735": {
+      "hosting": {
+        "Bookstore": [
+          "bookstore-4c735"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "bookstore-4c735"
+  }
+}
