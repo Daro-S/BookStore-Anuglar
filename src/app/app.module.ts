@@ -17,6 +17,7 @@ import { ViewAllProductComponent } from './product/view-all-product/view-all-pro
 import { HeaderComponent } from './site-layout/header/header.component';
 import { FooterComponent } from './site-layout/footer/footer.component';
 import { ViewProductComponent } from './product/view-product/view-product.component';
+import { FilterPipe } from './shared/filter.pipe';
 
 
 @NgModule({
@@ -30,6 +31,8 @@ import { ViewProductComponent } from './product/view-product/view-product.compon
     HeaderComponent,
     FooterComponent,
     ViewProductComponent,
+    FilterPipe
+
   ],
   imports: [
     BrowserModule,
