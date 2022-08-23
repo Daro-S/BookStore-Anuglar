@@ -42,5 +42,10 @@ export class ViewAllProductComponent implements OnInit {
       }
     })
   }
+  addtocart(item: any){
+    this.cartService.addtoCart(item);
+  }
+
+
 
 }
