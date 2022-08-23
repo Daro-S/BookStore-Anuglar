@@ -5,7 +5,9 @@ import { LoginComponent } from './authentication/login/login.component';
 import { RegisterComponent } from './authentication/register/register.component';
 import { VerifyEmailComponent } from './authentication/verify-email/verify-email.component';
 import { ViewAllProductComponent } from './product/view-all-product/view-all-product.component';
+import { ViewItemInCartComponent } from './product/view-item-in-cart/view-item-in-cart.component';
 import { ViewProductComponent } from './product/view-product/view-product.component';
+
 const routes: Routes = [
   {path: '', redirectTo: 'view-all-product', pathMatch: 'full'},
   {path: 'login', component: LoginComponent},
@@ -17,6 +19,8 @@ const routes: Routes = [
   {path: 'view-all-product/view-product/:id', component: ViewProductComponent},
   {path: 'view-all-product/login', component: LoginComponent},
   {path: 'view-product/:id/login', component: LoginComponent},
+  {path: 'view-all-product/view-product/:id/login', component: LoginComponent},
+  {path: 'view-all-product/view-product/:id/cart', component: ViewItemInCartComponent},
 
 
 ];

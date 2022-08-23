@@ -18,10 +18,11 @@ import { HeaderComponent } from './site-layout/header/header.component';
 import { FooterComponent } from './site-layout/footer/footer.component';
 import { ViewProductComponent } from './product/view-product/view-product.component';
 import { FilterPipe } from './shared/filter.pipe';
-
+import { ViewItemInCartComponent } from './product/view-item-in-cart/view-item-in-cart.component';
 
 @NgModule({
   declarations: [
+
     AppComponent,
     LoginComponent,
     RegisterComponent,
@@ -31,8 +32,8 @@ import { FilterPipe } from './shared/filter.pipe';
     HeaderComponent,
     FooterComponent,
     ViewProductComponent,
-    FilterPipe
-
+    FilterPipe,
+    ViewItemInCartComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,6 +44,7 @@ import { FilterPipe } from './shared/filter.pipe';
     provideAuth(() => getAuth()),
     provideFirestore(() => getFirestore()),
     AngularFireModule.initializeApp(environment.firebase)
+
   ],
   providers: [],
   bootstrap: [AppComponent]

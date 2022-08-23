@@ -20,7 +20,7 @@
             <input type="text" class="form-control" [(ngModel)]="searchTerm" (keyup)="search($event)" placeholder="search products">
         </div>
           <form class="d-flex">
-              <button class="btn btn-outline-dark" type="submit">
+              <button routerLink="cart" class="btn btn-outline-dark" type="submit">
                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                   Cart
                   <span class="badge bg-dark text-white ms-1 rounded-pill">{{totalItem}}</span>
