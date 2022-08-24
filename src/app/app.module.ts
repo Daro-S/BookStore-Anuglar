@@ -19,6 +19,7 @@ import { FooterComponent } from './site-layout/footer/footer.component';
 import { ViewProductComponent } from './product/view-product/view-product.component';
 import { FilterPipe } from './shared/filter.pipe';
 import { ViewItemInCartComponent } from './product/view-item-in-cart/view-item-in-cart.component';
+import { CheckoutComponent } from './product/checkout/checkout.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { ViewItemInCartComponent } from './product/view-item-in-cart/view-item-i
     ViewProductComponent,
     FilterPipe,
     ViewItemInCartComponent,
+    CheckoutComponent,
   ],
   imports: [
     BrowserModule,

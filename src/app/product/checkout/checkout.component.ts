@@ -1,39 +1,25 @@
 import { Component, OnInit } from '@angular/core';
 import { CheckoutService } from '../checkout-service/checkout.service';
-import { BookService } from '../service/book.service';
-import { CartService } from '../service/cart.service';
 
 @Component({
-  selector: 'app-view-item-in-cart',
-  templateUrl: './view-item-in-cart.component.html',
-  styleUrls: ['./view-item-in-cart.component.css']
+  selector: 'app-checkout',
+  templateUrl: './checkout.component.html',
+  styleUrls: ['./checkout.component.css']
 })
-export class ViewItemInCartComponent implements OnInit {
+export class CheckoutComponent implements OnInit {
 
-  public products : any = [];
-  public grandTotal !: number;
   paymentHandler: any = null;
 
   success: boolean = false
 
   failure:boolean = false
-  constructor(private cartService : CartService, private bookService: BookService,  private checkout: CheckoutService) { }
 
-  ngOnInit(): void {
-    this.cartService.getProducts()
-    .subscribe(res=>{
-      this.products = res;
-      this.grandTotal = this.cartService.getTotalPrice();
-      console.log(this.grandTotal);
-    })
+  constructor(private checkout: CheckoutService) {}
+
+  ngOnInit() {
     this.invokeStripe();
   }
-  removeItem(item: any){
-    this.cartService.removeCartItem(item);
-  }
-  emptycart(){
-    this.cartService.removeAllCart();
-  }
+
   makePayment(amount: number) {
     const paymentHandler = (<any>window).StripeCheckout.configure({
       key: 'pk_test_51LZtGiC7AiAlPiMpQUyvsUD9659yZoELDdQkI7BJObR2RZxD7pgJjriJCV3q5aJsgm1t1Bx9Wx8VKajcJ5GMg5Bv0006sKGA0o',
@@ -57,8 +43,8 @@ export class ViewItemInCartComponent implements OnInit {
     };
 
     paymentHandler.open({
-      name: 'BOOKSTORE TGI',
-      description: 'Buy with TGI Bookstore',
+      name: 'Coding Shiksha',
+      description: 'This is a sample pdf file',
       amount: amount * 100,
     });
   }
@@ -84,4 +70,3 @@ export class ViewItemInCartComponent implements OnInit {
   }
 
 }
-
