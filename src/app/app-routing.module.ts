@@ -6,6 +6,7 @@ import { RegisterComponent } from './authentication/register/register.component'
 import { VerifyEmailComponent } from './authentication/verify-email/verify-email.component';
 import { ViewAllProductComponent } from './product/view-all-product/view-all-product.component';
 import { ViewItemInCartComponent } from './product/view-item-in-cart/view-item-in-cart.component';
+import { ViewProductLoggedInComponent } from './product/view-product-logged-in/view-product-logged-in.component';
 import { ViewProductComponent } from './product/view-product/view-product.component';
 
 const routes: Routes = [
@@ -22,6 +23,8 @@ const routes: Routes = [
   {path: 'view-all-product/view-product/:id/login', component: LoginComponent},
   {path: 'view-all-product/view-product/:id/cart', component: ViewItemInCartComponent},
   {path: 'view-all-product/cart', component: ViewItemInCartComponent},
+  {path: 'view-product-logged-in', component: ViewProductLoggedInComponent},
+  {path: 'view-product-logged-in/cart', component: ViewItemInCartComponent},
 
 ];
 

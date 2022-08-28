@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { getAuth } from '@angular/fire/auth';
 import { AuthService } from 'src/app/shared/auth.service';
 
 @Component({
@@ -10,9 +11,11 @@ export class LoginComponent implements OnInit {
   email: string = '';
   password: string = '';
 
+
   constructor(private auth: AuthService) { }
 
   ngOnInit(): void {
+
   }
   login(){
     if(this.email == ''){

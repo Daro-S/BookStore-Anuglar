@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { getAuth } from '@angular/fire/auth';
 import { CartService } from 'src/app/product/service/cart.service';
+import { AuthService } from 'src/app/shared/auth.service';
 
 
 @Component({
@@ -8,10 +10,12 @@ import { CartService } from 'src/app/product/service/cart.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
+  // auth = getAuth();
+  // user = this.auth.currentUser;
   public totalItem : number = 0;
   public searchTerm !: string;
-  constructor(private cartService : CartService) { }
+
+  constructor(private cartService : CartService, public authService: AuthService) { }
 
   ngOnInit(): void {
     this.cartService.getProducts()
@@ -25,3 +29,4 @@ export class HeaderComponent implements OnInit {
     this.cartService.search.next(this.searchTerm);
   }
 }
+

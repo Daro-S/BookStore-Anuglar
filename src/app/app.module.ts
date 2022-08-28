@@ -20,6 +20,8 @@ import { ViewProductComponent } from './product/view-product/view-product.compon
 import { FilterPipe } from './shared/filter.pipe';
 import { ViewItemInCartComponent } from './product/view-item-in-cart/view-item-in-cart.component';
 import { CheckoutComponent } from './product/checkout/checkout.component';
+import { ViewProductLoggedInComponent } from './product/view-product-logged-in/view-product-logged-in.component';
+import { AdminDashboardComponent } from './product/admin-dashboard/admin-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +38,8 @@ import { CheckoutComponent } from './product/checkout/checkout.component';
     FilterPipe,
     ViewItemInCartComponent,
     CheckoutComponent,
+    ViewProductLoggedInComponent,
+    AdminDashboardComponent,
   ],
   imports: [
     BrowserModule,

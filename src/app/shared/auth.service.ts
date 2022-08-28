@@ -16,7 +16,7 @@ export class AuthService {
       localStorage.setItem('token', 'true');
 
       if(res.user?.emailVerified == true){
-        this.router.navigate(['/view-all-product']);
+        this.router.navigate(['/view-product-logged-in']);
       }else{
         this.router.navigate(['/verify-email']);
       }
@@ -70,8 +70,9 @@ export class AuthService {
   //sign in with google
   googleSignIn(){
     return this.fireauth.signInWithPopup(new GoogleAuthProvider).then( res =>{
-      this.router.navigate(['/view-all-product']);
+      this.router.navigate(['/view-product-logged-in']);
       localStorage.setItem('Item', JSON.stringify(res.user?.uid));
+      console.log(res.user?.displayName);
 
     },
     err => {
@@ -80,13 +81,20 @@ export class AuthService {
   }
   googleSignUp(){
     return this.fireauth.signInWithPopup(new GoogleAuthProvider).then( res =>{
-      this.router.navigate(['/view-all-product']);
+      this.router.navigate(['/view-product-logged-in']);
       localStorage.setItem('Item', JSON.stringify(res.user?.uid));
 
     },
     err => {
       alert(err.message);
     })
+  }
+  isLoggedIn(){
+    return this.fireauth.authState;
+  }
+  logOut(){
+    this.fireauth.signOut();
+    this.router.navigate(['/view-all-product']);
   }
 
 

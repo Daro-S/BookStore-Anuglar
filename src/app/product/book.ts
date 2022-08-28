@@ -4,7 +4,7 @@ export interface Book
   name: string;
   description: string;
   image: string;
-  categoryId: number;
+  categoryId: string;
   rating: number;
   isAvailable: number;
   isbn: string;
