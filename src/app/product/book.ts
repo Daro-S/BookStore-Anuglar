@@ -1,5 +1,4 @@
-export interface Book
-{
+export interface Book {
   id: number;
   name: string;
   description: string;
@@ -8,5 +7,5 @@ export interface Book
   rating: number;
   isAvailable: number;
   isbn: string;
-
+  price: number;
 }

@@ -1,0 +1,118 @@
+<div class="form-body">
+  <div class="row">
+    <div class="form-holder">
+      <div class="form-content">
+        <div class="form-items">
+          <h3>Add Your Book Now !</h3>
+          <p>Fill in the data below.</p>
+          <form
+            class="requires-validation"
+            novalidate
+            (submit)="addNewProduct(addProductForm)"
+            #addProductForm="ngForm"
+            style="width: 50%"
+          >
+            <div class="col-md-12">
+              <input
+                class="form-control"
+                type="text"
+                required
+                name="product_name"
+                placeholder="Book Title"
+                ngModel
+              />
+              <div class="valid-feedback">Product name field is valid!</div>
+              <div class="invalid-feedback">Product name cannot be blank!</div>
+            </div>
+            <div class="col-md-12">
+              <input
+                class="form-control"
+                type="text"
+                required
+                name="product_isbn"
+                placeholder="ISBN"
+                ngModel
+              />
+              <div class="valid-feedback">ISBN field is valid!</div>
+              <div class="invalid-feedback">ISBN field cannot be blank!</div>
+            </div>
+            <div class="col-md-12">
+              <input
+                class="form-control"
+                type="text"
+                required
+                name="product_image"
+                placeholder="Product Image"
+                ngModel
+              />
+              <div class="valid-feedback">Product Image field is valid!</div>
+              <div class="invalid-feedback">
+                Product Image field cannot be blank!
+              </div>
+            </div>
+            <div class="col-md-12">
+              <input
+                class="form-control"
+                type="text"
+                required
+                name="product_price"
+                placeholder="Price"
+                ngModel
+              />
+              <div class="valid-feedback">Product price field is valid!</div>
+              <div class="invalid-feedback">
+                Product price field cannot be blank!
+              </div>
+            </div>
+            <div class="col-md-12">
+              <input
+                class="form-control"
+                type="text"
+                required
+                name="product_description"
+                placeholder="Description"
+                ngModel
+              />
+              <div class="valid-feedback">
+                Product Description field is valid!
+              </div>
+              <div class="invalid-feedback">
+                Product Description field cannot be blank!
+              </div>
+            </div>
+            <div class="col-md-12">
+              <select
+                class="form-select mt-3"
+                required
+                name="product_category"
+                ngModel
+              >
+                <option selected disabled value="">Category</option>
+                <option value="Fantasy">Fantasy</option>
+                <option value="Sci-Fi">Sci-Fi</option>
+                <option value="Mystery">Mystery</option>
+                <option value="Romance">Romance</option>
+                <option value="Thriller">Thriller</option>
+                <option value="Horror">Horror</option>
+              </select>
+              <div class="valid-feedback">You selected a position!</div>
+              <div class="invalid-feedback">Please select a position!</div>
+            </div>
+
+            <div class="form-check">
+              <div class="invalid-feedback">
+                Please confirm that the entered data are all correct!
+              </div>
+            </div>
+
+            <div class="form-button mt-3">
+              <button id="submit" type="submit" class="btn btn-primary">
+                Add Now
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

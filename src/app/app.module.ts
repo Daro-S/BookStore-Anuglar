@@ -22,6 +22,9 @@ import { ViewItemInCartComponent } from './product/view-item-in-cart/view-item-i
 import { CheckoutComponent } from './product/checkout/checkout.component';
 import { ViewProductLoggedInComponent } from './product/view-product-logged-in/view-product-logged-in.component';
 import { AdminDashboardComponent } from './product/admin-dashboard/admin-dashboard.component';
+import { AddComponent } from './product/admin-dashboard/add/add.component';
+import { EditComponent } from './product/admin-dashboard/edit/edit.component';
+import { DeleteComponent } from './product/admin-dashboard/delete/delete.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +43,9 @@ import { AdminDashboardComponent } from './product/admin-dashboard/admin-dashboa
     CheckoutComponent,
     ViewProductLoggedInComponent,
     AdminDashboardComponent,
+    AddComponent,
+    EditComponent,
+    DeleteComponent,
   ],
   imports: [
     BrowserModule,

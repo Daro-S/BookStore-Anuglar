@@ -1,9 +1,12 @@
+import { DeleteComponent } from './product/admin-dashboard/delete/delete.component';
+import { EditComponent } from './product/admin-dashboard/edit/edit.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ForgotPasswordComponent } from './authentication/forgot-password/forgot-password.component';
 import { LoginComponent } from './authentication/login/login.component';
 import { RegisterComponent } from './authentication/register/register.component';
 import { VerifyEmailComponent } from './authentication/verify-email/verify-email.component';
+import { AddComponent } from './product/admin-dashboard/add/add.component';
 import { AdminDashboardComponent } from './product/admin-dashboard/admin-dashboard.component';
 import { ViewAllProductComponent } from './product/view-all-product/view-all-product.component';
 import { ViewItemInCartComponent } from './product/view-item-in-cart/view-item-in-cart.component';
@@ -36,6 +39,9 @@ const routes: Routes = [
   { path: 'view-product-logged-in', component: ViewProductLoggedInComponent },
   { path: 'view-product-logged-in/cart', component: ViewItemInCartComponent },
   { path: 'admin-dashboard', component: AdminDashboardComponent },
+  { path: 'add', component: AddComponent },
+  { path: 'edit/:id', component: EditComponent },
+  { path: 'delete/:id', component: DeleteComponent },
 ];
 
 @NgModule({

@@ -1,0 +1,67 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container px-4 px-lg-5">
+    <i style="font-size: 40px" class="fa fa-book" aria-hidden="true"></i>
+    <a class="navbar-brand" href="#!">BookStore</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#!">Home</a>
+        </li>
+      </ul>
+      <div class="form-group">
+        <input
+          type="text"
+          class="form-control"
+          [(ngModel)]="searchTerm"
+          (keyup)="search($event)"
+          placeholder="search products"
+        />
+      </div>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      <form class="d-flex">
+        <button routerLink="cart" class="btn btn-outline-dark" type="submit">
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          Cart
+          <span class="badge bg-dark text-white rounded-pill">{{
+            totalItem
+          }}</span>
+        </button>
+      </form>
+
+      &nbsp; &nbsp;
+      <form class="d-flex">
+        <a routerLink="login"
+          ><button class="btn btn-outline-dark" type="submit">
+            Sign in
+            <i class="fa fa-user-circle" aria-hidden="true"></i></button
+        ></a>
+      </form>
+    </div>
+  </div>
+  <form class="d-flex">
+    <a routerLink="/admin-dashboard"
+      ><button class="btn btn-outline-dark" type="submit">
+        Admin
+        <i class="fa fa-user-circle" aria-hidden="true"></i></button
+    ></a>
+  </form>
+</nav>
+<header class="bg-dark py-5">
+  <div class="container">
+    <div class="text-center text-white">
+      <h1 class="display-4 fw-bolder">Shop with TGI BookStore</h1>
+      <p class="lead fw-normal text-white-50 mb-0">Come and grab your books!</p>
+    </div>
+  </div>
+</header>
